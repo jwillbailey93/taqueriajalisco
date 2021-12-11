@@ -28,12 +28,16 @@ body{
     height:50px;
     background-color: rgba(189,204,212,0.8);
     text-align:center;
+    padding-left: 225px;
 }
 #nav li {
     display:inline-block;
-    padding-right: 20px;
+    padding-right: 0px;
     margin-right: 50px;
     margin-top: 15px;
+}
+#pick-up {
+    float:right;
 }
 footer {
     bottom:0px;
@@ -79,6 +83,39 @@ main {
     padding-top:15px;
     padding-left:15px;
 }
+#location {
+    display:flex;
+    height:500px;
+    width:95vw;
+    background-color: rgba(0,0,0, 0.5);
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:100px;
+    border-radius:15px;
+}
+#location h1 {
+    color:white;
+    padding-top:15px;
+    padding-left:15px;
+}
+#order {
+    display:flex;
+    height:500px;
+    width:95vw;
+    background-color: rgba(0,0,0, 0.5);
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:100px;
+    border-radius:15px;
+}
+#order h1 {
+    color:white;
+    padding-top:15px;
+    padding-left:15px;
+}
+#logo {
+    text-align: center;
+}
 </style>
 
 </head>
@@ -88,31 +125,33 @@ main {
 
 <header>
     <ul id="nav">
-        <li>
-          Menu
-            
-        </li>
-        <li>
-            Contact
-        </li>
-        <li>
-            Order Pickup
-        </li>
+        <li> <a href="#menu">Menu </a> </li>
+        <li> <a href="#contact">Contact</a></li>
+        <li> <a href="#location">Location</a></li>
+        <li id="pick-up"> <a href="#order">Order Pickup</a></li>
     </ul>
 </header>   
 <main>
     <section id="logo">
         <img src="Images/temp-1.png">
     </section>
+
 <section id="menu">
     <h1>menu</h1>
-
 </section>
+
 <section id="contact">
     <h1>contact</h1>
-
-    
 </section>
+
+<section id="location">
+    <h1>Location</h1>
+</section>
+
+<section id="order">
+    <h1>Order Pickup</h1>
+</section>
+
 </main>
 <footer>
     &copy; Taqueria Jalisco
