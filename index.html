@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taqueria Jalisco</title>
-
-<style>
-*, html{
+    <title>Document</title>
+ <style>
+    *, html{
     margin:0;
     box-sizing:border-box;
     font-family:verdana,geneva,tahoma,san-serif;
@@ -22,30 +19,81 @@
     --tjgreen: rgb(122,201,67);
     --tjblue: rgb(63,169,245);
 }
-body{
-    background: url(mexico-flowers.png);
+body {
+    background-image: url("images/mexico-flowers.png");
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment:fixed;
     background-size:cover;
-
-
+    width:100vw;
+    padding-top:50px;
 }
 #nav {
     position:fixed;
+    top:0px;
+    right:0px;
     width:100%;
-    height:50px;
-    background-color: rgba(189,204,212,0.8);
+    height:60px;
     text-align:center;
-    padding-left: 225px;
+    background-color:violet;
+  
+
 }
 #nav li {
     display:inline-block;
-    padding-right: 0px;
-    margin-right: 50px;
-    margin-top: 15px;
+    color:black;
+    font-size:1.5em;
+    line-height: 60px;
+    padding-right: 30px;
+    padding-left:50px;
+    z-index:3000;
+}
+#nav li:hover {
+    color:var(--tjblue);
 }
 #pick-up {
     float:right;
+}
+.photos {
+    width:500px;
+    padding-top:20px;
+    padding-left:15px;
+
+}
+#container {
+    width:100%;
+    margin: 0 auto 100px auto;
+    height: 100vh;
+}
+#menu,
+#location {
+    display: flex;
+    margin-top: 100px;
+    padding-bottom:100px;
+    /* background-color:blanchedalmond; */
+}
+/* #menu {
+    background-image: url("images/mexico-flowers.png");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    width:100vw;
+    padding-top:50px;
+} */
+#menu h1 {
+    padding-left:15px;
+}
+.text{
+    padding-left:15px;
+
+}
+.sub-text {
+    padding:5px;
+}
+#logo {
+margin: 100px auto;
+text-align:center;
+/* background-color:black */
+
 }
 footer {
     bottom:0px;
@@ -57,126 +105,40 @@ footer {
     color:white;
     padding-top:7px;
 }
-main {
-    padding:100px 0;
+@media only screen and (max-width:900px){
+    img {width:600px;
+    }
+}
 
-}
-#menu {
-    display:relative;
-    height:500px;
-    width:95vw;
-    background-color: rgba(0,0,0, 0.5);
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:100px;
-    border-radius:15px;
-}
-#menu h1{
-    color:white;
-    padding-top:15px;
-    padding-left:15px;
-}
-#menu h2 {
-    color: var(--tjorange);
-    margin:50px;
-    padding-right:100px;
-
-    
-}
-#contact {
-    display:flex;
-    height:500px;
-    width:95vw;
-    background-color: rgba(0,0,0, 0.5);
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:100px;
-    border-radius:15px;
-}
-#contact h1 {
-    color:white;
-    padding-top:15px;
-    padding-left:15px;
-}
-#location {
-    display:flex;
-    height:500px;
-    width:95vw;
-    background-color: rgba(0,0,0, 0.5);
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:100px;
-    border-radius:15px;
-}
-#location h1 {
-    color:white;
-    padding-top:15px;
-    padding-left:15px;
-}
-#order {
-    display:flex;
-    height:500px;
-    width:95vw;
-    background-color: rgba(0,0,0, 0.5);
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:100px;
-    border-radius:15px;
-}
-#order h1 {
-    color:white;
-    padding-top:15px;
-    padding-left:15px;
-}
-#logo {
-    text-align: center;
-}
 </style>
-
 </head>
 
 <body>
-    
 
-<header>
-    <ul id="nav">
-        <li> <a href="#menu">Menu </a> </li>
-        <li> <a href="#contact">Contact</a></li>
-        <li> <a href="#location">Location</a></li>
-        <li id="pick-up"> <a href="#order">Order Pickup</a></li>
-    </ul>
-</header>   
-<main>
-    <section id="logo">
-        <img src="Images/temp-1.png">
-    </section>
+    <header>
+        <ul id="nav">
+            <a href="menu.html">
+            <li>Menu</li></a>
+            <a href="#contact">
+            <li> Contact</li></a>
+            <a href="#location">
+            <li> Location</li></a>
+            <a href="#order">
+            <li id="pick-up"> Order Pickup</li></a>
+        </ul>
+    </header>
 
-<section id="menu">
-    <div>
-        <h1>menu</h1>
+    <div id="container">
+
+        <section id="logo">
+            <img src="images/temp-1.png">
+        </section>
+
     </div>
-    <div><h2>Tacos $2 each</h2></div>
-    
-    <h3>Tripa</h3>
-</section>
 
-<section id="contact">
-    <h1>contact</h1>
-</section>
-
-<section id="location">
-    <h1>Location</h1>
-</section>
-
-<section id="order">
-    <h1>Order Pickup</h1>
-</section>
-
-</main>
-<footer>
-    &copy; Taqueria Jalisco
-</footer>
+    <footer>
+        &copy; Taqueria Jalisco
+    </footer>
 
 </body>
-
 </html>
