@@ -14,11 +14,19 @@
     box-sizing:border-box;
     font-family:verdana,geneva,tahoma,san-serif;
 }
+:root {
+    --tjviolet: rgb(189,204,212);
+    --tjpink: rgb(255,123,172);
+    --tjred: rgb(255,29,37);
+    --tjorange: rgb(255,147,30);
+    --tjgreen: rgb(122,201,67);
+    --tjblue: rgb(63,169,245);
+}
 body{
     background: url(mexico-flowers.png);
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    background-size: cover;
+    background-size:cover;
 
 
 }
@@ -54,7 +62,7 @@ main {
 
 }
 #menu {
-    display:flex;
+    display:relative;
     height:500px;
     width:95vw;
     background-color: rgba(0,0,0, 0.5);
@@ -63,10 +71,17 @@ main {
     margin-top:100px;
     border-radius:15px;
 }
-#menu h1 {
+#menu h1{
     color:white;
     padding-top:15px;
     padding-left:15px;
+}
+#menu h2 {
+    color: var(--tjorange);
+    margin:50px;
+    padding-right:100px;
+
+    
 }
 #contact {
     display:flex;
@@ -137,7 +152,12 @@ main {
     </section>
 
 <section id="menu">
-    <h1>menu</h1>
+    <div>
+        <h1>menu</h1>
+    </div>
+    <div><h2>Tacos $2 each</h2></div>
+    
+    <h3>Tripa</h3>
 </section>
 
 <section id="contact">
