@@ -98,12 +98,12 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 50%;
     visibility: hidden;
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
   }
   
   .menu-wrap .menu > div {
@@ -112,8 +112,8 @@
     background-attachment:fixed;
     background-size:cover;
     border-radius: 50%;
-    width: 1000px;
-    height: 1000px;
+    width: 500px;
+    height: 500px;
     display: flex;
     flex: none;
     align-items: center;
@@ -132,7 +132,7 @@
   
   .menu-wrap .menu > div > div > ul > li {
     list-style: none;
-    color: #fff;
+    color: red;
     font-size: 2rem;
     padding: 1rem;
   }
