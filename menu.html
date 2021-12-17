@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
- <style>
+    <title>Menu</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="hamburger.css" rel="stylesheet">
+ <!-- <style>
     *, html{
     margin:0;
     box-sizing:border-box;
@@ -127,27 +129,142 @@ text-align:center;
     padding-top:7px;
     z-index:-1;
 }
+
+/* this is hamburger bar */
+#menuToggle {
+            display:block;
+            position: relative;
+            top:50px;
+            left:50px;
+            z-index:1;
+            user-select: none;
+        }
+
+        #menutoggle a{
+            text-decoration: none;
+            color:black;
+            transition: color 0.3s ease;
+        }
+
+        #menuToggle a:hover {
+            color:red;
+        }
+
+        #menuToggle input {
+            display:block;
+            width: 40px;
+            height:32px;
+            position: absolute;
+            top: -7px;
+            left: -5px;
+            cursor: pointer;
+            opacity: 0;
+            z-index: 2;
+        }
+
+        /* the next code makes the hamburger bar visible */
+
+        #menuToggle span {
+            display:block;
+            width: 33px;
+            height:4px;
+            margin-bottom: 5px;
+            position: relative;
+            background:white;
+            border-radius: 3px;
+            z-index: 1;
+            transform-origin: 4px 0px;
+            transition: transform 0.5s ease,
+            opacity 0.5s ease
+
+        }
+
+        #menuToggle .three {
+            transform-origin: 0% 100%;
+        }
+        #menuToggle input:checked~span {
+            opacity: 1;
+            transform: rotate(45deg) translate(-2px, -1px);
+            background-color: black;
+        }
+        #menuToggle input:checked~.two {
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2,0.2);
+        }
+        #menuToggle input:checked~.three {
+            transform: rotate(-45deg) translate(0, -1px);
+        }
+
+        #menu {
+            position:absolute;
+            width: 300px;
+            margin: -100px 0 0 -50px;
+            padding: 50px;
+            padding-top: 130px;
+            background-color: white;
+            list-style-type: none;
+            transform-origin: 0% 0%;
+            transform:translate(-100%, 0);
+            transition:transform 0.55;
+        }
+
+        #menu li {
+            padding: 10px 0;
+            font-size: 23px;
+        }
+
+        #menuToggle input:checked~ul {
+            transform: none;
+        }
+
+/* this is end of hamburger bar */
+
+
+
+
+
 @media only screen and (max-width:900px){
     #seafood, #taco{
         display:block;
-        text-align:center;
+        margin-left:10px;
+        margin-right:10px;
     }
-.text, .text-2 {
-    margin-left:50px;
-    margin-right:50px;
-}
+/* .text, .text-2 {
+    margin-left:10px;
+    margin-right:10px;
+} */
 #seafood {
     margin-top:-40px; 
 }
+
 }
 
-</style>
+</style> -->
 </head>
 
 <body>
 
     <header>
-        <ul id="nav">
+
+          <!-- This is for hamburger bar -->
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="order.html">Order Pick-Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of hamburger bar -->
+        <!-- <ul id="nav">
             <a href="menu.html">
             <li>Menu</li></a>
             <a href="#contact">
@@ -156,7 +273,31 @@ text-align:center;
             <li> Location</li></a>
             <a href="#order">
             <li id="pick-up"> Order Pickup</li></a>
-        </ul>
+        </ul> -->
+        <!-- <div id="menuToggle">
+            <input type="checkbox">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+                <ul id="menu">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="menu.html">
+                        <li>Menu</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                    <a href="location.html">
+                        <li>Location</li>
+                    </a>
+                    <a href="order.html">
+                        <li>Order Pick-up</li>
+                    </a>
+                </ul> -->
+        </div>
+
     </header>
 
     <div id="container">

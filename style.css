@@ -1,0 +1,222 @@
+*, html{
+    margin:0;
+    box-sizing:border-box;
+    font-family:verdana,geneva,tahoma,san-serif;
+}
+:root {
+    --tjviolet: rgb(189,204,212);
+    --tjpink: rgb(255,123,172);
+    --tjred: rgb(255,29,37);
+    --tjorange: rgb(255,147,30);
+    --tjgreen: rgb(122,201,67);
+    --tjblue: rgb(63,169,245);
+}
+body {
+    background-image: url("images/mexico-flowers.png");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    width:100vw;
+    padding-top:50px;
+}
+/* #nav {
+    position:fixed;
+    top:0px;
+    right:0px;
+    width:100%;
+    height:60px;
+    text-align:center;
+    background-color:violet;
+  
+
+}
+#nav li {
+    display:inline-block;
+    color:black;
+    font-size:1.5em;
+    line-height: 60px;
+    padding-right: 30px;
+    padding-left:50px;
+    z-index:3000;
+}
+#nav li:hover {
+    color:var(--tjblue);
+}
+#pick-up {
+    float:right;
+} */
+.photos {
+    width:500px;
+    padding-top:0px;
+    padding-left:15px;
+    padding-right:30px;
+    padding-bottom: 30px;
+
+}
+#container {
+    width:100%;
+    margin: 0 auto 100px auto;
+    height: 100vh;
+}
+/* .menu-title {
+    text-align:left;
+    padding-left:15px;
+    padding-top:50px;
+} */
+#taco,
+#seafood {
+    display: flex;
+    margin-top: 40px;
+    padding-bottom:100px;
+}
+#seafood {
+    padding-right:15px;
+}
+#taco h1 {
+    padding-left:15px;
+}
+.text, .text-2{
+    padding-left:15px;
+    background-color:#FE5C6C;
+    color:white;
+    display: block;
+    width:flex;
+    height:flex;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    border-radius:5px;
+}
+.text-2{
+    background-color:#467DF4;
+}
+.sub-text {
+    padding:5px;
+}
+#logo {
+margin: 100px auto;
+text-align:center;
+}
+#bottom {
+    bottom:0px;
+    text-align:left;
+    height:40px;
+    width:100%;
+    position:bottom;
+    background-color:rgba(189,204,212,0.5);
+    color:white;
+    padding-left:10px;
+    padding-top:7px;
+    z-index:-1;
+}
+
+/* this is hamburger bar */
+/* #menuToggle {
+            display:block;
+            position: fixed;
+            top:50px;
+            left:50px;
+            z-index:1;
+            user-select: none;
+        }
+
+        #menutoggle a{
+            text-decoration: none;
+            color:black;
+            transition: color 0.3s ease;
+        }
+
+        #menuToggle a:hover {
+            color:red;
+        }
+
+        #menuToggle input {
+            display:block;
+            width: 40px;
+            height:32px;
+            position: absolute;
+            top: -7px;
+            left: -5px;
+            cursor: pointer;
+            opacity: 0;
+            z-index: 2;
+        } */
+
+        /* the next code makes the hamburger bar visible */
+
+        /* #menuToggle span {
+            display:block;
+            width: 33px;
+            height:4px;
+            margin-bottom: 5px;
+            position: relative;
+            background:white;
+            border-radius: 3px;
+            z-index: 1;
+            transform-origin: 4px 0px;
+            transition: transform 0.5s ease,
+            opacity 0.5s ease
+
+        }
+
+        #menuToggle .three {
+            transform-origin: 0% 100%;
+        }
+        #menuToggle input:checked~span {
+            opacity: 1;
+            transform: rotate(45deg) translate(-2px, -1px);
+            background-color: black;
+        }
+        #menuToggle input:checked~.two {
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2,0.2);
+        }
+        #menuToggle input:checked~.three {
+            transform: rotate(-45deg) translate(0, -1px);
+        }
+
+        #menu {
+            position:absolute;
+            width: 300px;
+            margin: -100px 0 0 -50px;
+            padding: 50px;
+            padding-top: 130px;
+            background-color: white;
+            list-style-type: none;
+            transform-origin: 0% 0%;
+            transform:translate(-100%, 0);
+            transition:transform 0.55;
+        }
+
+        #menu li {
+            padding: 10px 0;
+            font-size: 23px;
+        }
+
+        #menuToggle input:checked~ul {
+            transform: none;
+        } */
+
+/* this is end of hamburger bar */
+
+
+
+
+
+@media only screen and (max-width:900px){
+    #seafood, #taco{
+        display:block;
+        margin-left:10px;
+        margin-right:10px;
+    }
+    @media only screen and (max-width:900px){
+        img {width:600px;
+        }
+    }
+
+#seafood {
+    margin-top:-40px; 
+}
+
+}
