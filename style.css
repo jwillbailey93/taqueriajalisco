@@ -53,6 +53,9 @@ body {
     padding-bottom: 30px;
 
 }
+.menu-title {
+    padding-top:50px;
+}
 #container {
     width:100%;
     margin: 0 auto 100px auto;
@@ -220,3 +223,9 @@ text-align:center;
 }
 
 }
+#map {
+    margin: 100px auto;
+    text-align:right;
+    padding-right:50px;
+    padding-top:0px;
+  }

@@ -20,99 +20,7 @@
     --tjorange: rgb(255,147,30);
     --tjgreen: rgb(122,201,67);
     --tjblue: rgb(63,169,245);
-}
-body {
-    background-image: url("images/mexico-flowers.png");
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-size:cover;
-    width:100vw;
-    padding-top:50px;
-}
-#nav {
-    position:fixed;
-    top:0px;
-    right:0px;
-    width:100%;
-    height:60px;
-    text-align:center;
-    background-color:violet;
-  
 
-}
-#nav li {
-    display:inline-block;
-    color:black;
-    font-size:1.5em;
-    line-height: 60px;
-    padding-right: 30px;
-    padding-left:50px;
-    z-index:3000;
-}
-#nav li:hover {
-    color:var(--tjblue);
-}
-#pick-up {
-    float:right;
-}
-.photos {
-    width:500px;
-    padding-top:20px;
-    padding-left:15px;
-
-}
-#container {
-    width:100%;
-    margin: 0 auto 100px auto;
-    height: 100vh;
-}
-#menu,
-#location {
-    display: flex;
-    margin-top: 100px;
-    padding-bottom:100px;
-    /* background-color:blanchedalmond; */
-}
-/* #menu {
-    background-image: url("images/mexico-flowers.png");
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-size:cover;
-    width:100vw;
-    padding-top:50px;
-} */
-#menu h1 {
-    padding-left:15px;
-}
-.text{
-    padding-left:15px;
-
-}
-.sub-text {
-    padding:5px;
-}
-#logo {
-margin: 100px auto;
-text-align:center;
-/* background-color:black */
-
-}
-footer {
-    bottom:0px;
-    text-align:center;
-    height:40px;
-    width:100%;
-    position:fixed;
-    background-color:rgba(189,204,212,0.5);
-    color:white;
-    padding-top:7px;
-}
-@media only screen and (max-width:900px){
-    img {width:600px;
-    }
-}
-
-</style> -->
 </head>
 
 <body>
@@ -137,53 +45,44 @@ footer {
     </div>
   </div>
   <!-- end of hamburger bar -->
-        <!-- <ul id="nav">
-            <a href="menu.html">
-            <li>Menu</li></a>
-            <a href="#contact">
-            <li> Contact</li></a>
-            <a href="#location">
-            <li> Location</li></a>
-            <a href="#order">
-            <li id="pick-up"> Order Pickup</li></a>
-        </ul> -->
-        <!-- <div id="menuToggle">
-            <input type="checkbox">
-                <span class="one"></span>
-                <span class="two"></span>
-                <span class="three"></span>
-                <ul id="menu">
-                    <a href="index.html">
-                        <li>Home</li>
-                    </a>
-                    <a href="menu.html">
-                        <li>Menu</li>
-                    </a>
-                    <a href="contact.html">
-                        <li>Contact</li>
-                    </a>
-                    <a href="location.html">
-                        <li>Location</li>
-                    </a>
-                    <a href="order.html">
-                        <li>Order Pick-up</li>
-                    </a>
-                </ul>
-        </div> -->
 
     </header>
 
     <div id="container">
 
-        <section id="logo">
-            <img src="images/temp-1.png">
+        <div class="menu-title">
+            <img src="images/contact-title.png">
         </section>
-
+        <div id="taco">
+            <div>
+                <img src="images/tacos.jpg" alt="photo of tacos" class="photos">
+            </div>
+            <div class="text">
+                <h2>Tacos</h2>
+                <p class="sub-text">fresh, handmade corn tortillas</p>
+                <p class="sub-text">select your filling. Dress and garnish at the salsa bar!</p>
+                <h2>soft or crispy. add $0.50 for flour</h2>
+                <p class="sub-text">Tripa (Tripe) <span style="float:right; color: black"> $2.50</p>
+                <p class="sub-text">Chorizo (Mexican Sausage) <span style="float:right; color: black"> $2.25</p>
+                <p class="sub-text">Costilla (Rib Beef) <span style="float:right; color: black"> $2.25</p>
+                <p class="sub-text">Al Pastor (Marinated Pork Meat)<span style="float:right; color: black"> $2.25</p>
+                <p class="sub-text">Asada (Grilled Steak)<span style="float:right; color: black"> $2.50</p>
+                <p class="sub-text">Cachete (Beef Cheek)<span style="float:right; color: black"> $2.25</p>
+                <p class="sub-text">Carnitas (Deep Fried Pork)<span style="float:right; color: black"> $2.25</p>
+                <p class="sub-text">Suadero<span style="float:right; color: black"> $2.25</p>
+                <p class="sub-text">Lengua (Tongue)<span style="float:right; color: black"> $2.50</p>
+                <p class="sub-text">Pollo (Chicken)<span style="float:right; color: black"> $2.25</p>
+                <p class="sub-text">Chicharron<span style="float:right; color: black"> $2.25</p>
+                <p class="sub-text">Buche<span style="float:right; color: black"> $2.25</p>
+            </div>
+           
+        </div>
+            <div id="bottom">
+            &copy; Taqueria Jalisco
+            </div>
     </div>
 
-    <div id="bottom">
-        &copy; Taqueria Jalisco
-    </div>
+  
 
 </body>
 </html>
